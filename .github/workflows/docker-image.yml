@@ -7,8 +7,8 @@ on:
       - v*
       
 env:
-  IMAGE_NAME: $GITHUB_REPOSITORY
-  IMAGE_ID: ghcr.io/$IMAGE_NAME
+  IMAGE_NAME: $(GITHUB_REPOSITORY)
+  IMAGE_ID: ghcr.io/$(IMAGE_NAME)
   
 jobs:
 
